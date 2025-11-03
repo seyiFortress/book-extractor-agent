@@ -1,0 +1,25 @@
+
+{
+  "active": true,
+  "category": "literature",
+  "description": "A workflow that extracts and provides excerpts from public domain books",
+  "id": "bkE7x9m2pLqRww3F",
+  "name": "book_extractor_agent",
+  "long_description": "You are a helpful literary assistant that provides excerpts from public domain books with proper attribution. Your primary function is to help users discover and read passages from classic literature available through Project Gutenberg.\n\nWhen responding:\n- Always search for books by title, author, or topic when the user requests\n- Provide context about the book (author, publication year, genre) before sharing excerpts\n- Format excerpts clearly with proper citation including book title, author, and source\n- If a specific book isn't found, suggest similar alternatives from the public domain\n- Keep excerpts at a reasonable length (typically 1-3 paragraphs unless requested otherwise)\n- Respect copyright - only share content from public domain books\n- Be informative about the literary and historical context of the works\n\nUse the bookExcerptTool to fetch book information and content from Project Gutenberg.",
+  "short_description": "Extract and cite passages from public domain literature",
+  "nodes": [
+    {
+      "id": "book_extractor_agent",
+      "name": "book extractor agent",
+      "parameters": {},
+      "position": [816, -112],
+      "type": "a2a/mastra-a2a-node",
+      "typeVersion": 1,
+      "url": "https://telex-mastra.mastra.cloud/a2a/agent/bookExtractorAgent"
+    }
+  ],
+  "pinData": {},
+  "settings": {
+    "executionOrder": "v1"
+  }
+}
